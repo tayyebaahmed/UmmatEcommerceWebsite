@@ -1,0 +1,346 @@
+<!-- Account -->
+
+<!-- Checkout -->
+<div class="row">
+  <div class="col-md-4 order-md-2 mb-4">
+    <h4 class="d-flex justify-content-between align-items-center mb-3">
+      <span class="text-muted">Your cart</span>
+      <span class="badge badge-secondary badge-pill">3</span>
+    </h4>
+    <ul class="list-group mb-3">
+      <li class="list-group-item d-flex justify-content-between lh-condensed">
+        <div>
+          <h6 class="my-0">Product name</h6>
+          <small class="text-muted">Brief description</small>
+        </div>
+        <span class="text-muted">$12</span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between lh-condensed">
+        <div>
+          <h6 class="my-0">Second product</h6>
+          <small class="text-muted">Brief description</small>
+        </div>
+        <span class="text-muted">$8</span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between lh-condensed">
+        <div>
+          <h6 class="my-0">Third item</h6>
+          <small class="text-muted">Brief description</small>
+        </div>
+        <span class="text-muted">$5</span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between bg-light">
+        <div class="text-success">
+          <h6 class="my-0">Promo code</h6>
+          <small>EXAMPLECODE</small>
+        </div>
+        <span class="text-success">-$5</span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between">
+        <span>Total (USD)</span>
+        <strong>$20</strong>
+      </li>
+    </ul>
+
+    <form class="card p-2">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Promo code">
+        <div class="input-group-append">
+          <button type="submit" class="btn btn-secondary">Redeem</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="col-md-8 order-md-1">
+    <h4 class="mb-3">Billing address</h4>
+    <form class="needs-validation" novalidate>
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="firstName">First name</label>
+          <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+          <div class="invalid-feedback">
+            Valid first name is required.
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="lastName">Last name</label>
+          <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+          <div class="invalid-feedback">
+            Valid last name is required.
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="username">Username</label>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text">@</span>
+          </div>
+          <input type="text" class="form-control" id="username" placeholder="Username" required>
+          <div class="invalid-feedback" style="width: 100%;">
+            Your username is required.
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="email">Email <span class="text-muted">(Optional)</span></label>
+        <input type="email" class="form-control" id="email" placeholder="you@example.com">
+        <div class="invalid-feedback">
+          Please enter a valid email address for shipping updates.
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="address">Address</label>
+        <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+        <div class="invalid-feedback">
+          Please enter your shipping address.
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
+        <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+      </div>
+
+      <div class="row">
+        <div class="col-md-5 mb-3">
+          <label for="country">Country</label>
+          <select class="custom-select d-block w-100" id="country" required>
+            <option value="">Choose...</option>
+            <option>United States</option>
+          </select>
+          <div class="invalid-feedback">
+            Please select a valid country.
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <label for="state">State</label>
+          <select class="custom-select d-block w-100" id="state" required>
+            <option value="">Choose...</option>
+            <option>California</option>
+          </select>
+          <div class="invalid-feedback">
+            Please provide a valid state.
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <label for="zip">Zip</label>
+          <input type="text" class="form-control" id="zip" placeholder="" required>
+          <div class="invalid-feedback">
+            Zip code required.
+          </div>
+        </div>
+      </div>
+      <hr class="mb-4">
+      <div class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="same-address">
+        <label class="custom-control-label" for="same-address">Shipping address is the same as my billing
+          address</label>
+      </div>
+      <div class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="save-info">
+        <label class="custom-control-label" for="save-info">Save this information for next time</label>
+      </div>
+      <hr class="mb-4">
+
+      <h4 class="mb-3">Payment</h4>
+
+      <div class="d-block my-3">
+        <div class="custom-control custom-radio">
+          <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+          <label class="custom-control-label" for="credit">Credit card</label>
+        </div>
+        <div class="custom-control custom-radio">
+          <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
+          <label class="custom-control-label" for="debit">Debit card</label>
+        </div>
+        <div class="custom-control custom-radio">
+          <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
+          <label class="custom-control-label" for="paypal">PayPal</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="cc-name">Name on card</label>
+          <input type="text" class="form-control" id="cc-name" placeholder="" required>
+          <small class="text-muted">Full name as displayed on card</small>
+          <div class="invalid-feedback">
+            Name on card is required
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="cc-number">Credit card number</label>
+          <input type="text" class="form-control" id="cc-number" placeholder="" required>
+          <div class="invalid-feedback">
+            Credit card number is required
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 mb-3">
+          <label for="cc-expiration">Expiration</label>
+          <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+          <div class="invalid-feedback">
+            Expiration date required
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <label for="cc-cvv">CVV</label>
+          <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+          <div class="invalid-feedback">
+            Security code required
+          </div>
+        </div>
+      </div>
+      <hr class="mb-4">
+      <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
+    </form>
+  </div>
+</div>
+
+<!-- Cart -->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="{{ url('/') }}">
+      <!-- {{ config('app.name', 'Laravel') }} -->
+      <img src="/img/ummatLogo.png" width="35px" height="30px">&nbsp;
+      Ummat Store
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- Left Side Of Navbar -->
+      <ul class="navbar-nav mr-auto">
+      </ul>
+
+      <!-- Right Side Of Navbar -->
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url('/welcome') }}">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url('/product/allList') }}">Shop</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">Cart <span class="badge badge-light">2</span>
+          </a>
+        </li>
+        <!-- Authentication Links -->
+        @guest
+        <li class="nav-item">
+          <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+        </li>
+        @if (Route::has('register'))
+        <li class="nav-item">
+          <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+        </li>
+        @endif
+        @else
+        <li class="nav-item">
+          <a class="nav-link" href="#">Account</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false" v-pre>
+            {{ Auth::user()->email }} <span class="caret"></span>
+          </a>
+
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
+                                             document.getElementById('logout-form').submit();">
+              {{ __('Logout') }}
+            </a>
+            <a class="dropdown-item" href="{{ url('/admin/dashboard') }}">
+              Dashboard
+            </a>
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+              @csrf
+            </form>
+          </div>
+        </li>
+        @endguest
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="card table-responsive">
+  <table class="table table-hover shopping-cart-wrap">
+    <thead class="text-muted">
+      <tr>
+        <th scope="col">Product</th>
+        <th scope="col" width="120">Quantity</th>
+        <th scope="col" width="120">Price</th>
+        <th scope="col" width="200" class="text-right">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      @foreach($products as $product)
+
+      <tr>
+        <td>
+          <figure class="media">
+            <figcaption class="media-body">
+              <h6 class="title text-truncate">&nbsp; &nbsp;{{ $product['item']  ['title'] }}</h6>
+            </figcaption>
+          </figure>
+        </td>
+        <td>
+          <form>
+            <input type="number" name="qty" id="qty" class="form-control text-center" min="0" max="99"
+              value="{{ $product['qty'] }}">
+            <input type="button" name="update" value="Update" class="btn btn-block btn-outline-success btn-round">
+          </form>
+        </td>
+        <td>
+          <div class="price-wrap">
+            <span class="price">{{ $product['price'] }}</span>
+            <small class="text-muted"></small>
+          </div> <!-- price-wrap .// -->
+        </td>
+        <td class="text-right">
+            <a name="remove" value="x Remove by 1" class="btn btn-outline-danger" />
+        </td>
+      </tr>
+
+      @endforeach
+      <tr>
+        <th colspan="3">Total Qty: </th>
+        <td>3</td>
+      </tr>
+      <tr>
+        <th colspan="3">Total Price: </th>
+        <td>₹​ 540</td>
+      </tr>
+      <tr>
+        <th colspan="9"><input type="submit" name="remove" value="Checkout" class="btn btn-outline-primary" /></th>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<nav class="navbar navbar-expand-md navbar-light navbar-laravel">
+  <div class="container">
+    <h5 class="m-auto">&copy Copyrights of Tayyeba Ahmed.</h5>
+  </div>
+</nav>
+<script type="type/javascript" src="{{asset('js/app.js')}}"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+  integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+  integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+  integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<link rel="dns-prefetch" href="//fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
+
+<!-- Styles -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+  integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<link href="{{ asset('css/app.css') }}" rel="stylesheet">

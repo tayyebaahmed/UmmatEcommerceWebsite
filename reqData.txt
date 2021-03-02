@@ -1,0 +1,15 @@
+Role table
+
+INSERT INTO `roles` (`id`, `name`, `description`, `created_at`, `updated_at`, `deleted_at`) VALUES (NULL, 'customer', 'Customer Role', NULL, NULL, NULL);
+INSERT INTO `roles` (`id`, `name`, `description`, `created_at`, `updated_at`, `deleted_at`) VALUES (NULL, 'admin', 'Admin Role', NULL, NULL, NULL);
+
+User table
+
+INSERT INTO `users` (`id`, `role_id`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`, `deleted_at`) VALUES (NULL, '2', 'admin@admin.com', NULL, '$2y$10$VjPlw7Dx07hBccLxURVHc.W39s6SuMEvddoGP5xvwkP870VwurgLa', NULL, NULL, NULL, NULL);
+
+Units table
+
+INSERT INTO `units` (`id`, `name`, `created_at`, `updated_at`, `deleted_at`) VALUES (NULL, 'kilograms', NULL, NULL, NULL);
+INSERT INTO `units` (`id`, `name`, `created_at`, `updated_at`, `deleted_at`) VALUES (NULL, 'litres', NULL, NULL, NULL);
+INSERT INTO `units` (`id`, `name`, `created_at`, `updated_at`, `deleted_at`) VALUES (NULL, 'grams', NULL, NULL, NULL);
+INSERT INTO `units` (`id`, `name`, `created_at`, `updated_at`, `deleted_at`) VALUES (NULL, 'millilitres', NULL, NULL, NULL);
